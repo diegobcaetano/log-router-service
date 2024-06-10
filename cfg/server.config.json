@@ -1,0 +1,31 @@
+{
+    "usecase": {
+        "input": {
+            "type": "webserver-log",
+            "opts": {
+                "from": {
+                    "type": "s3",
+                    "name": "my-s3-bucket"
+                },
+                "compression-type": "tar.zip"
+            }
+        },
+        "output": {
+            "type": "json",
+            "opts": {
+                "to": {
+                    "host": "localhost",
+                    "port": 3002,
+                    "type": "tcp-server"
+                }
+            }
+        }
+    },
+    "filters": [
+        {
+            "target": "status",
+            "operator": "equals",
+            "content": "500"
+        }
+    ]
+}

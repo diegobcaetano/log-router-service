@@ -89,10 +89,7 @@ npm test
 
 ## Roadmap
 
-What I have planned for the next steps:
-
-- Implement work threads for paralelism between streams
-- Add more filter options
+The next steps are planned using Github Projects: [Project Link](https://github.com/users/diegobcaetano/projects/1/views/1)
 
 ## Contributing
 
